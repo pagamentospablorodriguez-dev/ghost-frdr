@@ -50,7 +50,7 @@ export default function Footer() {
               <h4 className="text-xs font-medium uppercase tracking-widest text-ink-300">Contato</h4>
               <ul className="mt-4 space-y-2.5 text-sm">
                 <li><a href="#" className="text-ink-400 transition-colors hover:text-ink-100">Suporte</a></li>
-                <li><a href="#" className="text-ink-400 transition-colors hover:text-ink-100">contato@fraudara.pro</a></li>
+                <li><a href="#" className="text-ink-400 transition-colors hover:text-ink-100">contactfraudara@gmail.com</a></li>
               </ul>
             </div>
           </div>
