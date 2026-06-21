@@ -14,10 +14,17 @@ const included = [
 export default function Pricing() {
   const [loading, setLoading] = useState(false);
 
-  const handleBuy = () => {
-    setLoading(true);
-    setTimeout(() => setLoading(false), 1400);
-  };
+
+
+const handleBuy = () => {
+  setLoading(true);
+  setTimeout(() => {
+    setLoading(false);
+    window.location.href = "https://pay.cakto.com.br/eaif6t7_936676";
+  }, 1400);
+};
+
+  
 
   return (
     <section id="precos" className="relative overflow-hidden py-24 sm:py-32" data-reveal>
@@ -69,7 +76,7 @@ export default function Pricing() {
               ))}
             </ul>
 
-            <button
+           <button
               onClick={handleBuy}
               disabled={loading}
               className="group mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-ghost-500 px-6 py-4 text-sm font-semibold text-ink-950 transition-all hover:bg-ghost-400 hover:shadow-[0_0_36px_-6px_rgba(16,185,129,0.7)] disabled:opacity-70"
