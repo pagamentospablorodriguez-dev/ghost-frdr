@@ -54,13 +54,16 @@ const handleBuy = () => {
               </span>
             </div>
 
-            <div className="mt-6 flex items-end gap-3">
-              <span className="text-sm text-ink-400 line-through">R$ 79,90</span>
-              <span className="text-5xl font-semibold tracking-tightest text-ink-100">
-                R$ 29,90
-              </span>
-              <span className="mb-1.5 text-sm text-ink-400">à vista</span>
-            </div>
+            <div className="mt-6 flex flex-wrap items-end gap-x-3 gap-y-1">
+  <span className="whitespace-nowrap text-sm text-ink-400 line-through">R$ 79,90</span>
+  <span className="whitespace-nowrap text-5xl font-semibold tracking-tightest text-ink-100">
+    R$ 29,90
+  </span>
+  <span className="mb-1.5 text-sm text-ink-400">à vista</span>
+</div>
+
+
+            
             <p className="mt-2 text-xs text-ink-400">
               ou 6x de R$ 5,73 no cartão.
             </p>
