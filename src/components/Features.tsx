@@ -22,7 +22,7 @@ const features = [
     tag: 'Módulo 03',
     title: 'Auto-Responder Corporativo Pro',
     description:
-      'Cole a mensagem do chefe, a IA responde com jargões corporativos que dão a ilusão de produtividade. Pareceocupado, soa engajado — e ninguém pede detalhes.',
+      'Cole a mensagem do chefe, a IA responde com jargões corporativos que dão a ilusão de produtividade. Parece ocupado, soa engajado — e ninguém pede detalhes.',
     bullets: ['Tom ajustável (busy, alinhando, follow-up)', 'Detecção de urgência no pedido', 'Templates por chefe / projeto'],
   },
 ];
