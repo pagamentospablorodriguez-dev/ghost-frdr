@@ -14,17 +14,13 @@ const included = [
 export default function Pricing() {
   const [loading, setLoading] = useState(false);
 
-
-
-const handleBuy = () => {
-  setLoading(true);
-  setTimeout(() => {
-    setLoading(false);
-    window.location.href = "https://pay.cakto.com.br/eaif6t7_936676";
-  }, 1400);
-};
-
-  
+  const handleBuy = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      window.location.href = 'https://pay.cakto.com.br/eaif6t7_936676';
+    }, 1400);
+  };
 
   return (
     <section id="precos" className="relative overflow-hidden py-24 sm:py-32" data-reveal>
@@ -47,32 +43,22 @@ const handleBuy = () => {
           <div className="relative overflow-hidden rounded-3xl border border-ghost-500/25 bg-gradient-to-b from-ink-850/90 to-ink-900/90 p-8 shadow-[0_0_60px_-20px_rgba(16,185,129,0.4)] sm:p-10">
             <div className="pointer-events-none absolute right-0 top-0 h-32 w-32 rounded-full bg-ghost-500/10 blur-3xl" aria-hidden />
 
-            <div className="flex items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-ghost-500/10 px-3 py-1 text-xs font-medium text-ghost-400 ring-1 ring-ghost-500/20">
-                <Sparkles className="h-3.5 w-3.5" />
-                Kit completo
-              </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-ghost-500/10 px-3 py-1 text-xs font-medium text-ghost-400 ring-1 ring-ghost-500/20">
+              <Sparkles className="h-3.5 w-3.5" />
+              Kit completo
+            </span>
+
+            <div className="mt-6">
+              <p className="text-sm text-ink-400">
+                <span className="line-through">R$ 79,90</span>
+              </p>
+              <p className="mt-1 text-5xl font-semibold tracking-tightest text-ink-100">
+                R$ 29,90
+              </p>
+              <p className="mt-1.5 text-sm text-ink-400">
+                à vista · ou 6x de R$ 5,73 no cartão
+              </p>
             </div>
-
-
-            
-          <div className="mt-6">
-  <div className="flex flex-wrap items-end gap-x-3 gap-y-1">
-    <span className="whitespace-nowrap text-sm text-ink-400 line-through">R$ 79,90</span>
-    <span className="whitespace-nowrap text-5xl font-semibold tracking-tightest text-ink-100">
-      R$ 29,90
-    </span>
-    <span className="text-sm text-ink-400">à vista</span>
-  </div>
-  <p className="mt-2 text-xs text-ink-400">ou 6x de R$ 5,73 no cartão.</p>
-</div>
-
-
-
-            
-            <p className="mt-2 text-xs text-ink-400">
-              ou 6x de R$ 5,73 no cartão.
-            </p>
 
             <ul className="mt-8 space-y-3">
               {included.map((t) => (
@@ -85,7 +71,7 @@ const handleBuy = () => {
               ))}
             </ul>
 
-           <button
+            <button
               onClick={handleBuy}
               disabled={loading}
               className="group mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-ghost-500 px-6 py-4 text-sm font-semibold text-ink-950 transition-all hover:bg-ghost-400 hover:shadow-[0_0_36px_-6px_rgba(16,185,129,0.7)] disabled:opacity-70"
