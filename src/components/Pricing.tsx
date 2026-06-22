@@ -62,7 +62,7 @@ const handleBuy = () => {
               <span className="mb-1.5 text-sm text-ink-400">à vista</span>
             </div>
             <p className="mt-2 text-xs text-ink-400">
-              ou 2x de R$ 15,45 no cartão.
+              ou 6x de R$ 5,73 no cartão.
             </p>
 
             <ul className="mt-8 space-y-3">
